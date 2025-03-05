@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: Copyright The Lima Authors
+// SPDX-License-Identifier: Apache-2.0
+
 package main
 
 import (
@@ -202,7 +205,9 @@ func loadOrCreateInstance(cmd *cobra.Command, args []string, createOnly bool) (*
 			return nil, err
 		}
 	}
-
+	if err := tmpl.Embed(cmd.Context(), true, true); err != nil {
+		return nil, err
+	}
 	yqExprs, err := editflags.YQExpressions(flags, true)
 	if err != nil {
 		return nil, err

@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: Copyright The Lima Authors
+// SPDX-License-Identifier: Apache-2.0
+
 // Package filenames defines the names of the files that appear under an instance dir
 // or inside the config directory.
 //
@@ -21,6 +24,7 @@ const (
 	NetworksConfig = "networks.yaml"
 	Default        = "default.yaml"
 	Override       = "override.yaml"
+	Base           = "base.yaml"
 )
 
 // Filenames that may appear under an instance directory
