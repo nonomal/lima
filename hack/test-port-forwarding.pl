@@ -129,7 +129,8 @@ EOF
 sleep 5;
 
 # Record current log size, so we can skip prior output
-$ENV{LIMA_HOME} ||= "$ENV{HOME}/.lima";
+$ENV{HOME_HOST} ||= "$ENV{HOME}";
+$ENV{LIMA_HOME} ||= "$ENV{HOME_HOST}/.lima";
 my $ha_log = "$ENV{LIMA_HOME}/$instance/ha.stderr.log";
 my $ha_log_size = -s $ha_log or die;
 
@@ -211,11 +212,11 @@ sub JoinHostPort {
 # "ipv4" and "ipv6" will be replaced by the actual host ipv4 and ipv6 addresses.
 __DATA__
 portForwards:
-  # We can't test that port 22 will be blocked because the guestagent has
-  # been ignoring it since startup, so the log message is in the part of
-  # the log we skipped.
-  # skip: 127.0.0.1 22 → 127.0.0.1 2222
-  # ignore: 127.0.0.1 sshLocalPort
+# We can't test that port 22 will be blocked because the guestagent has
+# been ignoring it since startup, so the log message is in the part of
+# the log we skipped.
+# skip: 127.0.0.1 22 → 127.0.0.1 2222
+# ignore: 127.0.0.1 sshLocalPort
 
 - guestIP: 127.0.0.2
   guestPortRange: [3000, 3009]
