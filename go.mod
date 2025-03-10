@@ -4,16 +4,16 @@ module github.com/lima-vm/lima
 go 1.23.0
 
 require (
-	al.essio.dev/pkg/shellescape v1.5.1
+	al.essio.dev/pkg/shellescape v1.6.0
 	github.com/AlecAivazis/survey/v2 v2.3.7
 	github.com/Code-Hex/vz/v3 v3.6.0 // gomodjail:unconfined
 	github.com/Microsoft/go-winio v0.6.2 // gomodjail:unconfined
 	github.com/apparentlymart/go-cidr v1.1.0
 	github.com/balajiv113/fd v0.0.0-20230330094840-143eec500f3e
-	github.com/cheggaaa/pb/v3 v3.1.6 // gomodjail:unconfined
+	github.com/cheggaaa/pb/v3 v3.1.7 // gomodjail:unconfined
 	github.com/containerd/containerd v1.7.26
 	github.com/containerd/continuity v0.4.5
-	github.com/containers/gvisor-tap-vsock v0.8.3 // gomodjail:unconfined
+	github.com/containers/gvisor-tap-vsock v0.8.4 // gomodjail:unconfined
 	github.com/coreos/go-semver v0.3.1
 	github.com/cpuguy83/go-md2man/v2 v2.0.6
 	github.com/cyphar/filepath-securejoin v0.4.1
@@ -27,7 +27,7 @@ require (
 	github.com/google/yamlfmt v0.16.0
 	github.com/invopop/jsonschema v0.13.0
 	github.com/lima-vm/go-qcow2reader v0.6.0
-	github.com/lima-vm/sshocker v0.3.5 // gomodjail:unconfined
+	github.com/lima-vm/sshocker v0.3.6 // gomodjail:unconfined
 	github.com/mattn/go-isatty v0.0.20
 	github.com/mattn/go-shellwords v1.0.12
 	github.com/mdlayher/vsock v1.2.1 // gomodjail:unconfined
@@ -43,11 +43,11 @@ require (
 	github.com/spf13/cobra v1.9.1 // gomodjail:unconfined
 	github.com/spf13/pflag v1.0.6
 	github.com/wk8/go-ordered-map/v2 v2.1.8
-	golang.org/x/net v0.35.0
-	golang.org/x/sync v0.11.0
-	golang.org/x/sys v0.30.0 // gomodjail:unconfined
-	golang.org/x/text v0.22.0
-	google.golang.org/grpc v1.70.0
+	golang.org/x/net v0.37.0
+	golang.org/x/sync v0.12.0
+	golang.org/x/sys v0.31.0 // gomodjail:unconfined
+	golang.org/x/text v0.23.0
+	google.golang.org/grpc v1.71.0
 	google.golang.org/protobuf v1.36.5 // gomodjail:unconfined
 	gopkg.in/op/go-logging.v1 v1.0.0-20160211212156-b2cb9fa56473
 	gotest.tools/v3 v3.5.2
@@ -112,20 +112,20 @@ require (
 	github.com/pierrec/lz4/v4 v4.1.22 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pkg/sftp v1.13.7 // indirect
-	github.com/rivo/uniseg v0.2.0 // indirect
+	github.com/rivo/uniseg v0.4.7 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/sabhiram/go-gitignore v0.0.0-20210923224102-525f6e181f06 // indirect
 	// gomodjail:unconfined
 	github.com/u-root/uio v0.0.0-20240224005618-d2acac8f3701 // indirect
 	github.com/x448/float16 v0.8.4 // indirect
 	github.com/yuin/gopher-lua v1.1.1 // indirect
-	golang.org/x/crypto v0.35.0 // indirect
+	golang.org/x/crypto v0.36.0 // indirect
 	golang.org/x/mod v0.22.0 // indirect
-	golang.org/x/oauth2 v0.24.0 // indirect
-	golang.org/x/term v0.29.0 // indirect
+	golang.org/x/oauth2 v0.25.0 // indirect
+	golang.org/x/term v0.30.0 // indirect
 	golang.org/x/time v0.7.0 // indirect
 	golang.org/x/tools v0.28.0 // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20241202173237-19429a94021a // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20250115164207-1a7da9e5054f // indirect
 	gopkg.in/evanphx/json-patch.v4 v4.12.0 // indirect
 	gopkg.in/inf.v0 v0.9.1 // indirect
 	gopkg.in/tomb.v1 v1.0.0-20141024135613-dd632973f1e7 // indirect
